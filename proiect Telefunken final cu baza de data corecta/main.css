@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #111;
+  color: #fff;
+  line-height: 1.6;
+}
+body header {
+  background: #000;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  height: 131px;
+}
+body header div.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 131px;
+}
+body header div.container figure {
+  padding: 13px 25px;
+  max-width: 130px;
+}
+body header div.container figure img.logo {
+  max-width: 100%;
+  height: auto;
+}
+body header div.container nav ul.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+@media (max-width: 768px) {
+  body header div.container nav ul.nav-links {
+    flex-direction: column;
+    background: #000;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 200px;
+    display: none;
+    padding: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  body header div.container nav ul.nav-links ul.nav-links.active {
+    display: flex;
+  }
+}
+body header div.container nav ul.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+body header div.container nav ul.nav-links li a:hover {
+  color: #ccc;
+}
+body header div.container div.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  body header div.container div.menu-toggle {
+    display: block;
+  }
+}
+body main section.hero {
+  background: url("hero.jpg") no-repeat center center/cover;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+body main section.hero div.video {
+  width: 100%;
+  height: 90vh;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+body main section.hero div.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+body main section.hero div.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+body main section.hero div.hero-content a.btn {
+  padding: 0.75rem 1.5rem;
+  background: #c00;
+  color: #fff;
+  border: none;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+body main section.hero div.hero-content a.btn:hover {
+  background: #900;
+}
+body main section.products {
+  padding: 4rem 1rem;
+  background: #1a1a1a;
+  text-align: center;
+  max-width: 1250px;
+  margin: auto;
+}
+body main section.products h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+body main section.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1250px;
+  margin: auto;
+}
+body main section.product-grid div.product-card {
+  background: #222;
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.3s, background 0.3s;
+}
+body main section.product-grid div.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+body main section.product-grid div.product-card:hover {
+  transform: translateY(-10px);
+  background: #333;
+}
+body main .product article {
+  width: 100vw;
+  height: 80px;
+  background-color: black;
+}
+body main .product article div {
+  max-width: 500px;
+  margin: 0 auto;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+body main .product article div ul {
+  display: flex;
+  list-style: none;
+}
+body main .product article div ul li {
+  padding-right: 10px;
+  color: white;
+}
+body main .product article div .carousel-inner {
+  width: 100px;
+  height: auto;
+}
+body footer {
+  background: #000;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+}/*# sourceMappingURL=main.css.map */
